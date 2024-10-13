@@ -33,6 +33,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/main.html', // Path to your HTML template
+            inject: false, // Prevents automatic script injection            
         }),
     ],
     mode: 'development', // Set to 'development' for dev environment
